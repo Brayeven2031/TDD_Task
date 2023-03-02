@@ -49,9 +49,9 @@ jobs:
         
       - name: Lambdas Update 
         run: |
-          cd /home/ubuntu/environment/tdd/lambda_call
+          cd lambda_call
           zappa update dev
-          cd /home/ubuntu/environment/tdd/lambda_make
+          cd ../lambda_make
           zappa update dev
           
         
